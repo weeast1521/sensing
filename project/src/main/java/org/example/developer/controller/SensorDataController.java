@@ -57,7 +57,7 @@ public class SensorDataController {
                 magnetometer.setTimestamp(sensorData.getTimestamp());
                 return magnetometerRepository.save(magnetometer);
 
-            case "GPS":
+            case "gps":
                 GPS gps = new GPS();
                 gps.setLatitude(sensorData.getLatitude());
                 gps.setLongitude(sensorData.getLongitude());
